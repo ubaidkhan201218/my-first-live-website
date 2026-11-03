@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+
+
+header {
+    background-color: #101c36;
+    padding: 18px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #55c6e8;
+}
+
+
+
+
+.hero {
+    min-height: 450px;
+    background: linear-gradient(120deg, #101c36, #174d70);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.small-heading {
+    color: #55c6e8;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 45px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #55c6e8;
+}
+
+.hero-description {
+    color: #d7e3ee;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.main-button {
+    display: inline-block;
+    background-color: #55c6e8;
+    color: #101c36;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    background-color: white;
+    transform: translateY(-3px);
+}
+
+
+
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading p {
+    color: #1688b4;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    color: #101c36;
+    margin-top: 8px;
+}
+
+
+
+
+.about {
+    padding: 75px 8%;
+}
+
+.about-content {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.about-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    flex: 1;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+}
+
+.about-box h3 {
+    color: #174d70;
+    margin-bottom: 15px;
+}
+
+.about-box p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.interest-list {
+    padding-left: 20px;
+    color: #555;
+}
+
+.interest-list li {
+    margin-bottom: 10px;
+}
+
+
+
+
+.skills {
+    padding: 75px 8%;
+    background-color: #eaf1f8;
+}
+
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 4px solid #1688b4;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.skill-card h3 {
+    color: #174d70;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #666;
+}
+
+
+
+
+.journey {
+    padding: 75px 8%;
+}
+
+.journey-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.journey-item {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border-left: 4px solid #1688b4;
+}
+
+.journey-item h3 {
+    color: #174d70;
+    margin-bottom: 8px;
+}
+
+.journey-item p {
+    color: #666;
+}
+
+
+
+
+.goals {
+    padding: 75px 8%;
+    background-color: #eaf1f8;
+}
+
+.goal-container {
+    display: flex;
+    gap: 20px;
+}
+
+.goal-card {
+    flex: 1;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.goal-card h3 {
+    color: #174d70;
+    margin-bottom: 12px;
+}
+
+.goal-card p {
+    color: #666;
+}
+
+
+
+
+.contact {
+    padding: 75px 20px;
+    text-align: center;
+}
+
+.contact > p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+
+
+footer {
+    background-color: #101c36;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+footer h3 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #c5d1df;
+}
+
+.copyright {
+    margin-top: 18px;
+    font-size: 13px;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .skill-container {
+        grid-template-columns: 1fr;
+    }
+
+    .goal-container {
+        flex-direction: column;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+}
